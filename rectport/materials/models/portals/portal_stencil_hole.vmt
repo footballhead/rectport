@@ -1,0 +1,18 @@
+"Portal"
+{
+	$alphamasktexture "models/portals/portal_opening_mask"
+	$alphamasktextureframe "0"
+
+	"Proxies"
+	{
+		"PortalPickAlphaMask"
+		{
+			maskTextureVar $alphamasktexture
+			maskFrameVar $alphamasktextureframe
+			openingTexture "models/portals/portal_opening_mask"
+			idleTexture "models/portals/portal_mask"
+		}
+	}
+}
+
+

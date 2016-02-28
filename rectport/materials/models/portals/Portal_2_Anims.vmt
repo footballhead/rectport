@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/portals/portal_red_open.vtf"
+	//$hdrcolorscale 1.5
+	$translucent 1
+}

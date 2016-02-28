@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "models/portals/portal_blue_open"
+	//$hdrcolorscale 1.5
+	$translucent 1
+}

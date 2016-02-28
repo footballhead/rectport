@@ -1,0 +1,61 @@
+"PortalStaticOverlay"
+{
+	$staticamount "0"
+	$staticamounta "0"
+	$staticamountb "0"
+	$staticamountc "0"
+	$staticamountnegativehack "0"
+	$PortalOpenAmount "0"
+	$staticblendtexture "models/portals/portal_blue_closed"
+	$staticblendtextureframe "0"
+	$alphamasktexture "models/portals/portal_mask"
+	$alphamasktextureframe "0"
+	$onevalue "1"
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar" "$staticblendtexture"
+			"animatedTextureFrameNumVar" "$staticblendtextureframe"
+			"animatedTextureFrameRate" "30"
+		}
+		"PortalOpenAmount"
+		{
+			"resultVar" "$PortalOpenAmount"
+		}
+		"PortalStatic"
+		{
+			"resultVar" "$staticamounta"
+		}
+		"PortalPickAlphaMask"
+		{
+			maskTextureVar $alphamasktexture
+			maskFrameVar $alphamasktextureframe
+			openingTexture "models/portals/portal_opening_mask"
+			idleTexture "models/portals/portal_mask"
+		}
+		"Subtract"
+		{
+			srcVar1 "$onevalue"
+			srcVar2 "$PortalOpenAmount"
+			resultVar "$staticamountnegativehack"
+		}
+		"Abs"
+		{
+			srcVar1 "$staticamountnegativehack"
+			resultVar "$staticamountb"
+		}
+		"Add"
+		{
+			srcVar1 "$staticamounta"
+			srcVar2 "$staticamountb"
+			resultvar "$staticamountc"
+		}
+		"Abs"
+		{
+			srcVar1 "$staticamountc"
+			resultVar "$staticamount"
+		}
+	}
+}

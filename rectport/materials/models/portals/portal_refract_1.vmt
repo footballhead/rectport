@@ -1,0 +1,24 @@
+"PortalRefract"
+{
+	"$Stage" "0"
+	"$PortalOpenAmount" "0.0"
+	"$PortalStatic" "0.0"
+
+	"$time" "0.0"
+	"Proxies"
+	{
+		"CurrentTime"
+		{
+			"resultVar" "$time"
+		}
+// If we don't update the vars then the distortion never grows and we don't see it!
+//		"PortalOpenAmount"
+//		{
+//			"resultVar" "$PortalOpenAmount"
+//		}
+//		"PortalStatic"
+//		{
+//			"resultVar" "$PortalStatic"
+//		}
+	}
+}
