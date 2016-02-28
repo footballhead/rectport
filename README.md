@@ -2,6 +2,8 @@
 
 Rectangular portals for Portal in DX9.
 
+![screenshot](https://cloud.githubusercontent.com/assets/3687359/13381454/a9088902-de2a-11e5-8262-a8a01f3f3c70.jpg)
+
 ## Required Tools
 
   * Portal's `vpk.exe` (should come with Portal)
