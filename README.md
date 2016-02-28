@@ -56,4 +56,7 @@ The particles in `rectport/particles/` are modified portal particle systems whic
  6. File -> Import
  7. Select all exported frames in order
  8. Save VTF to `rectport/materials/models/portals/`
- 
+
+## Special Thanks
+
+  * Pelpix - For figuring out the portal material proxies
