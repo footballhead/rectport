@@ -8,7 +8,7 @@ Rectangular portals for Portal in DX9.
   * Synfig
   * VTFEdit
 
-## Using in Portal
+## Installing
 
  1. Run `make_vpk.bat`
  2. Copy resulting `rectport.vpk` to `steamapps/common/portal/portal/custom/`
